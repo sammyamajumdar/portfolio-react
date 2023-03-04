@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        parisienne: ['Parisienne'],
+        
+        openSans: ['sans-serif'], 
+        Roboto: ['Roboto']
       }
     },
   },

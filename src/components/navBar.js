@@ -1,23 +1,17 @@
 export default function navBar () {
     return (
-        <div className=" bg-slate-200/50">
-        <section>
-            <nav className="py-10 mb-12 pl-10 pr-5 flex justify-between">
-                <h1 className='text-4xl font-bold text-cyan-700'>Sammya Majumdar</h1>
-                <ul className='flex items-center'>
-                    <li className='cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 '>
-                        <a href="resume">
-                            Resume
-                        </a>
-                    </li>
-                    <li className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105'> 
-                        <a href="contact" className="">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-                </nav>
-        </section>
-        </div>
-    )
+      <div className="shadow-md pb-2 mb-10 pt-4 border-b border-gray-200 sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-20">
+        <nav className="">
+          <div className="mx-10 px-0">
+            <div className="flex items-center justify-between h-16">
+              <span className="text-2xl text-cyan-800 font-semibold">Sammya Majumdar</span>
+              <div className="flex space-x-4 text-gray-900">
+                <a href="Projects" className="font-semibold text-lg hover:text-cyan-700 transition ease-in-out delay-50 hover:scale-105 hover:-translate-y-1">Resume</a>
+                <a href="Contact" className="font-semibold text-lg hover:text-cyan-700 transition ease-in-out delay-50 hover:scale-105 hover:-translate-y-1">Contact</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    );
 }

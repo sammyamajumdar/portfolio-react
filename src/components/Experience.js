@@ -3,23 +3,26 @@ import universityLogo from './Photos/education_logo_1.png'
 
 export default function Experience() {
     return (
-        <div>
+        <div className='px-40 relative'>
 
-            <h1 className="font-bold px-40 py-0 text-3xl text-teal-700">EXPERIENCE</h1>
+            <h1 className="font-bold py-0 text-3xl text-teal-700">EXPERIENCE</h1>
             
-            <div className=' mb-10 shadow-lg p-10 rounded-xl ml-40 mr-40'>
+            <div className=' mb-10 shadow-lg p-10 rounded-xl '>
             <div >
                 <div className='flex justify-center'>
                     <img src={AccentureLogo} alt="accenture" className="h-20 w-20" />
                     <div className=''>
                     <h2 className="font-bold text-xl pt-5">Accenture UK</h2>
                     <h3 className='font-light italic'>April 2022 - Present</h3>
-                    <p className="pb-5 mt-10 font-bold text-teal-700 text-2xl">Current Role</p>
+                    
                     </div>
+                    
                 
                 </div>
             </div>
             <p>
+            <p className="pb-5 mt-10 font-bold text-teal-700 text-2xl">Current Role</p>
+            
                 <ul className='list-disc'>
                     <li><span className='font-bold text-teal-600'>Front End Web Developer at GCP.AI  (Accenture Internal Asset): </span> Working on the front-end 
                     development of a GCP hosted webite using React, NodeJS, Express 
@@ -28,8 +31,9 @@ export default function Experience() {
                     </li>
                 </ul>
             </p>
-            <div className='flex justify-center pb-5 pl-10 mt-10 ml-10 text-2xl font-bold text-teal-700'>Previous Roles</div>
+           
             <p className='pb-10'>
+            <p className="pb-5 mt-10 font-bold text-teal-700 text-2xl">Previous Roles</p>
                 <ul className='list-disc'>
                     <li><span className='font-bold text-teal-600'>Data Engineer at Accenture Data Studio (Accenture Internal Asset): </span> 
                     Developed back-end python scripts for custom document extractor framework, deployed on Google Cloud Function aimed at automating 
@@ -50,7 +54,7 @@ export default function Experience() {
 
             {/*-------------------------------------------------------------------------- University of Liverpool --------------------------------------------------------------*/} 
 
-            <div className=' mb-10 shadow-lg p-10 rounded-xl ml-40 mr-40'>
+            <div className=' mb-10 shadow-lg p-10 rounded-xl'>
             <div >
                 <div className='flex justify-center'>
                     <img src={universityLogo} alt="accenture" className="h-20 w-15 mt-3" />
