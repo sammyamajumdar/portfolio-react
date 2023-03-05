@@ -2,6 +2,7 @@ import { FaLocationArrow} from 'react-icons/fa'
 import profilePhoto from './Photos/profilePhoto.JPG';
 import { AiFillLinkedin, AiFillFacebook, AiFillInstagram, AiFillGithub } from 'react-icons/ai'
 
+
 export default function IntroBar() {
     const LinkedInProfile = "https://www.linkedin.com/in/sammya-majumdar-8b9188112/"
     const FacebookProfile = "https://www.facebook.com"

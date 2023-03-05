@@ -10,7 +10,8 @@ import bachelorDegree from './Files/bachelorDegree.pdf'
 import transcriptReport from './Files/HEARreport.pdf'
 import masterThesis from './Files/thesis.pdf'
 import bachelorTranscript from './Files/bachelorTranscript.pdf'
-
+import saxbyPrize from './Files/prize.pdf'
+import { HiOutlineExternalLink } from 'react-icons/hi'
 
 
 
@@ -51,6 +52,7 @@ export default function Education() {
             
                     <span className='font-bold text-slate-800 align-middle flex justify-center'>Master of Science, M.Sc - Energy and Power Systems</span>
                     <span className='font-bold text-slate-700 align-middle flex justify-center'>Department of Electronics and Electrical Engineering</span>
+                    <div className='flex justify-center'><span className='font-bold text-slate-700 align-middle flex justify-center ml-3'>Sir Robin Saxby Prize recipient  </span> <a href={saxbyPrize}><HiOutlineExternalLink className='ml-1 mt-1' /></a></div>
                     <span className='font-bold text-slate-600 align-middle flex justify-center italic'>Grade: First Class (Disctinction)</span>     
             </p>
 
