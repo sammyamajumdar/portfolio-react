@@ -11,11 +11,10 @@ function App() {
     <div className=''>
 
       <NavBar />
-      <div className='sm:px-30 xl:px-80'>
+      <div>
       <IntroBar />
       <Experience />
       <Education />
-      <Certifications />
       </div>
     
     </div>
