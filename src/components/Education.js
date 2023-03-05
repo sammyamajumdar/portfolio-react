@@ -1,15 +1,25 @@
 import { useState } from 'react'
 import universityLogo from './Photos/education_logo_1.png'
 import makautLogo from './Photos/makaut.png'
-
+import matlabLogo from './Photos/simulink.jpeg'
+import cppLogo from './Photos/cpp.png'
+import nptelLogo from './Photos/nptel.png'
+import coursera from './Photos/Deep-Learning-Ai-logo.png'
+import masterDegree from './Files/masterDegree.pdf'
+import bachelorDegree from './Files/bachelorDegree.pdf'
+import transcriptReport from './Files/HEARreport.pdf'
+import masterThesis from './Files/thesis.pdf'
+import bachelorTranscript from './Files/bachelorTranscript.pdf'
 
 
 
 
 export default function Education() {
 
+    const deepLearningCred = "https://coursera.org/share/bb1776981ac32919292a895971f16901"
+
     const [show, setShow] = useState(false);
-    const [buttonText, setButtonText] = useState("Short description");
+    const [buttonText, setButtonText] = useState("Long description");
 
 
     const handleClick = () => {
@@ -23,15 +33,15 @@ export default function Education() {
     }
 
     return (
-        <div>
-        <h1 className="font-bold px-40 py-0 text-3xl text-teal-700">EDUCATION</h1>
-        <div className=' mb-10 shadow-lg p-10 rounded-xl ml-40 mr-40'>
+        <div className='px-[20%]'>
+        <h1 className="font-bold py-0 text-3xl text-slate-900">EDUCATION</h1>
+        <div className=' mb-10 shadow-lg p-10 rounded-xl'>
             <div >
                 <div className='flex justify-center'>
                     <img src={universityLogo} alt="accenture" className="h-20 w-15 mt-3" />
                     <div className=''>
                     <h2 className="font-bold text-xl pt-5 pl-2">University of Liverpool</h2>
-                    <h3 className='font-light italic pl-3'>October 2020 - December 2021</h3>
+                    <h3 className='font-md italic pl-2'>October 2020 - December 2021</h3>
                     
                     </div>
                 
@@ -39,15 +49,15 @@ export default function Education() {
             </div>
             <p className='mt-10'>
             
-                    <span className='font-bold text-teal-600 align-middle flex justify-center'>Master of Science, M.Sc - Energy and Power Systems</span>
-                    <span className='font-bold text-teal-500 align-middle flex justify-center'>Department of Electronics and Electrical Engineering</span>
-                    <span className='font-medium text-teal-400 align-middle flex justify-center italic'>Grade: First Class (Disctinction)</span>     
+                    <span className='font-bold text-slate-800 align-middle flex justify-center'>Master of Science, M.Sc - Energy and Power Systems</span>
+                    <span className='font-bold text-slate-700 align-middle flex justify-center'>Department of Electronics and Electrical Engineering</span>
+                    <span className='font-bold text-slate-600 align-middle flex justify-center italic'>Grade: First Class (Disctinction)</span>     
             </p>
 
             <p className='mt-10'>
             
-                <div className="pb-5 mt-10 font-bold text-teal-700 text-2xl">Modules:</div>
-                <span className='text-xl font-semibold text-teal-600'>Semester 1</span>
+                <div className="pb-5 mt-10 font-bold text-slate-900 text-2xl">Modules:</div>
+                <span className='text-xl font-semibold text-slate-800'>Semester 1</span>
                 <ul className="list-disc">
                     <li>Electric Drives</li>
                     <li>Plasma System Engineering</li>
@@ -56,7 +66,7 @@ export default function Education() {
                     <li>Measurement, Monitoring and Sensors</li>
                 </ul>
 
-                <div className='mt-5 text-teal-600 text-xl font-semibold'>Semester 2</div>
+                <div className='mt-5 text-slate-800 text-xl font-semibold'>Semester 2</div>
                 <ul className='list-disc'>
                     <li>Electromagnetic Compatibility</li>
                     <li>High Voltage Engineering</li>
@@ -64,7 +74,7 @@ export default function Education() {
                     <li>Renewable Energy and Smart Grid</li>
                 </ul>
 
-                <div className='mt-5 text-teal-600 text-xl font-semibold'>Semester 3</div>
+                <div className='mt-5 text-slate-800 text-xl font-semibold'>Semester 3</div>
                 <ul className='list-disc'><li>Masters Thesis</li></ul>
                 <div className='font-bold mt-5 flex justify-start'>
                     Optimisation and prediction of a 
@@ -73,10 +83,10 @@ export default function Education() {
                 
                 </div>
                 <div className='my-3'>
-                    <button onClick={handleClick} className='border py-2 px-4 hover:shadow-md transition ease-in-out delay-75 hover:scale-105 bg-teal-500 text-white rounded-lg hover:bg-gradient-to-r from-cyan-500 t0-teal-500'>
+                    <button onClick={handleClick} className='border py-2 px-4 hover:shadow-md transition ease-in-out delay-75 hover:scale-105 bg-slate-700 text-white rounded-lg hover:bg-gradient-to-r from-slate-600 t0-slate-500'>
                     {buttonText}
                     </button>
-                    <button className='ml-5 border py-2 px-4 hover:shadow-md transition ease-in-out delay-75 hover:scale-105 bg-teal-500 text-white rounded-lg hover:bg-gradient-to-r from-cyan-500 t0-teal-500'>Download PDF</button>
+                    <a href={masterThesis}><button className='ml-5 border py-2 px-4 hover:shadow-md transition ease-in-out delay-75 hover:scale-105 bg-slate-700 text-white rounded-lg hover:bg-gradient-to-r from-slate-600 t0-slate-700'>Download PDF</button></a>
                 </div>
                 {
                 show?<div className="transition ease-in-out delay-100">
@@ -104,9 +114,15 @@ export default function Education() {
 
             </p>
 
+            
+            <div className="pb-5 mt-10 font-bold text-slate-900 text-2xl">Tools</div>
+            <div className='flex justify-start'>
+                <img src={matlabLogo} alt="matlab" className='hover:scale-110 transition ease-in-out delay-50 max-h-16 rounded-full' />
+                <img src={cppLogo} alt="matlab" className='hover:scale-110 transition ease-in-out delay-50 max-h-16 rounded-full' />
+            </div>
             <div className='flex justify-center mt-10'>
-                <button className='mr-10 border py-2 px-4 hover:shadow-md transition ease-in-out delay-75 hover:scale-105 bg-teal-500 text-white rounded-lg hover:bg-gradient-to-r from-cyan-500 t0-teal-500'>View degree</button>
-                <button className='border py-2 px-4 hover:shadow-md transition ease-in-out delay-75 hover:scale-105 bg-teal-500 text-white rounded-lg hover:bg-gradient-to-r from-cyan-500 t0-teal-500'>View transcript</button>
+            <a href={masterDegree}><button className='mr-10 border py-2 px-4 hover:shadow-md transition ease-in-out delay-75 hover:scale-105 bg-slate-700 text-white rounded-lg hover:bg-gradient-to-r from-slate-600 t0-slate-700'>View degree</button></a>
+            <a href={transcriptReport}><button className='border py-2 px-4 hover:shadow-md transition ease-in-out delay-75 hover:scale-105 bg-slate-700 text-white rounded-lg hover:bg-gradient-to-r from-slate-600 t0-slate-700'>View transcript</button></a>
             </div>
 
             </div>
@@ -121,13 +137,13 @@ export default function Education() {
 
 
 
-            <div className=' mb-10 shadow-lg p-10 rounded-xl ml-40 mr-40'>
+            <div className=' mb-10 shadow-lg p-10 rounded-xl'>
             <div >
-                <div className='flex justify-center'>
+                <div className='flex justify-center px-[10%]'>
                     <img src={makautLogo} alt="accenture" className="h-20 w-15" />
                     <div className=''>
                     <h2 className="font-bold text-xl pt-5 pl-2">Maulana Abul Kalam Azad University of Technology</h2>
-                    <h3 className='font-light italic flex justify-center'>August 2016 - June 2020</h3>
+                    <h3 className='font-md italic flex justify-center'>August 2016 - June 2020</h3>
                     
                     </div>
                 
@@ -135,14 +151,14 @@ export default function Education() {
             </div>
             <p className='mt-10'>
             
-                    <span className='font-bold text-teal-600 align-middle flex justify-center'>Bachelor of Technology, B.Tech - Electrical Engineering</span>
-                    <span className='font-bold text-teal-500 align-middle flex justify-center'>Department of Electrical Engineering</span>
-                    <span className='font-medium text-teal-400 align-middle flex justify-center italic'>Grade: 7.84 / 10 </span>     
+                    <span className='font-bold text-slate-800 align-middle flex justify-center'>Bachelor of Technology, B.Tech - Electrical Engineering</span>
+                    <span className='font-bold text-slate-700 align-middle flex justify-center'>Department of Electrical Engineering</span>
+                    <span className='font-medium text-slate-600 align-middle flex justify-center italic'>Grade: 7.84 / 10 </span>     
             </p>
 
             <p className='mt-10'>
             
-            <div className="pb-5 mt-10 font-bold text-teal-700 text-2xl">Selected Modules</div>
+            <div className="pb-5 mt-10 font-bold text-slate-900 text-2xl">Selected Modules</div>
             <ul className="list-disc">
                 <li>Power Systems</li>
                 <li>Power Electronics</li>
@@ -153,13 +169,18 @@ export default function Education() {
             </ul>
 
             </p>
-
+            <div className="pb-5 mt-10 font-bold text-slate-900 text-2xl">Relevant Certifications</div>
+                <div className='flex justify-start'>
+                    <a href="https://drive.google.com/file/d/1bMZA58KMbqZM0wnKl4GwHsxDpDHDNHws/view"><img src={nptelLogo} alt="nptel" className='hover:scale-110 transition ease-in-out delay-50 max-h-16 rounded-full' /></a>
+                    <a href={deepLearningCred}><img src={coursera} alt="nptel" className='hover:scale-110 transition ease-in-out delay-50 max-h-20 rounded-full pl-5' /></a>
+                </div>
             <div className='flex justify-center mt-10'>
-                <button className='mr-10 border py-2 px-4 hover:shadow-md transition ease-in-out delay-75 hover:scale-105 bg-teal-500 text-white rounded-lg hover:bg-gradient-to-r from-cyan-500 t0-teal-500'>View degree</button>
-                <button className='border py-2 px-4 hover:shadow-md transition ease-in-out delay-75 hover:scale-105 bg-teal-500 text-white rounded-lg hover:bg-gradient-to-r from-cyan-500 t0-teal-500'>View transcript</button>
+                <a href={bachelorDegree}><button className='mr-10 border py-2 px-4 hover:shadow-md transition ease-in-out delay-75 hover:scale-105 bg-slate-700 text-white rounded-lg hover:bg-gradient-to-r from-slate-600 t0-slate-700'>View degree</button></a>
+                <a href={bachelorTranscript}><button className='border py-2 px-4 hover:shadow-md transition ease-in-out delay-75 hover:scale-105 bg-slate-700 text-white rounded-lg hover:bg-gradient-to-r from-slate-600 t0-slate-700'>View transcript</button></a>
             </div>
             </div>
-
+            
+            
 
 
         

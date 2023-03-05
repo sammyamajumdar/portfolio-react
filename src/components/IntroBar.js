@@ -1,6 +1,5 @@
 import { FaLocationArrow} from 'react-icons/fa'
 import profilePhoto from './Photos/profilePhoto.JPG';
-import quotes from './Photos/quotes.png'
 import { AiFillLinkedin, AiFillFacebook, AiFillInstagram, AiFillGithub } from 'react-icons/ai'
 
 export default function IntroBar() {
@@ -40,7 +39,7 @@ export default function IntroBar() {
                 leaderboard. {/*<span className='font-bold text-rose-600'>And I love Mewli Datta</span>*/}
                 
                 <h1 className='font-bold text-xl mt-8'>Hi, I am <span className='font-openSans text-3xl text-slate-800'>Sammya</span></h1>    
-                <h2 className='font-semibold text-md'>Welcome to my corner of the internet.</h2>
+                <h2 className='font-semibold text-md pb-2'>Welcome to my corner of the internet.</h2>
                 <p className='font-md'>Currently, I am an analyst at <a href="https://www.accenture.com" className='font-bold hover:text-blue-800 text-blue-900'>Accenture UK</a>, based in London. My current role involves
                 developing front-end interfaces for internal GCP assets mostly using React.
                 My education spans 2 countries: got my bachelors in Electrical Engineering from India, followed by a 

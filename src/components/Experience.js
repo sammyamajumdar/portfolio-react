@@ -98,7 +98,7 @@ export default function Experience() {
                     <img src={universityLogo} alt="accenture" className="h-20 w-15 mt-3" />
                     <div className=''>
                     <h2 className="font-bold text-xl pt-5 pl-2">University of Liverpool</h2>
-                    <h3 className='font-light italic pl-5'>February 2021 - March 2022</h3>
+                    <h3 className='font-md italic pl-4'>February 2021 - March 2022</h3>
                     
                     </div>
                 
