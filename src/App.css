@@ -5,6 +5,9 @@
     src: local('Roboto'), url("../public/Fonts/Roboto-Medium.ttf") format('ttf');
   }
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import 'semantic-ui-css/semantic.min.css'

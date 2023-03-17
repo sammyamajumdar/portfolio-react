@@ -84,7 +84,7 @@ export default function Education() {
                     
                 
                 </div>
-                <div className='my-3'>
+                <div className='my-3 sm-xl:flex justify-start'>
                     <button onClick={handleClick} className='border py-2 px-4 hover:shadow-md transition ease-in-out delay-75 hover:scale-105 bg-slate-700 text-white rounded-lg hover:bg-gradient-to-r from-slate-600 t0-slate-500'>
                     {buttonText}
                     </button>

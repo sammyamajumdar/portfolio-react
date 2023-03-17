@@ -16,7 +16,7 @@ export default function Experience() {
     const gcpCred = "https://www.credential.net/9a216578-08ba-452d-a446-f0943cced277?key=af705ca13cbe91b546b57f5852f23e7c85db5dd24c629e9f1d5b0428f790f7d9#gs.n1h7f9"
     const awsCred = "https://www.credly.com/badges/87274c5e-f8cd-41af-b280-955290394c55/public_url"
     return (
-        <div className='px-[20%]'>
+        <div className='sm:px-[3%] md:px-[20%] lg:px-[20%] xl:px-[20%] px-[3%]'>
 
             <h1 className="font-bold py-0 -mt-[5%] text-3xl text-slate-800">EXPERIENCE</h1>
             
